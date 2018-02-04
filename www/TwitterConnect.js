@@ -10,6 +10,9 @@ var TwitterConnect = {
 	showUser: function (successCallback, errorCallback) {
 		exec(successCallback, errorCallback, 'TwitterConnect', 'showUser', []);
 	},
+    verifyCredentials: function (successCallback, errorCallback) {
+        exec(successCallback, errorCallback, 'TwitterConnect', 'verifyCredentials', []);
+    },
 	sendTweet: function (msg, successCallback, errorCallback) {
 		exec(successCallback, errorCallback, 'TwitterConnect', 'sendTweet', [{"status" : msg}]);
 	},
